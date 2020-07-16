@@ -1,0 +1,984 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <title>Sonali Singhal</title>
+  <style>
+    /* #skills>.row>.col.card {
+      height: 520px;
+    } */
+
+    /* #skills>.row>.col>.card>img {
+      min-height: 240px;
+    } */
+
+    header {
+      background: url('img/intro2.jpg');
+      background-size: cover;
+      background-position: center;
+      min-height: 500px;
+    }
+
+    @media screen and (max-width: 670px) {
+      header {
+        min-height: 500px;
+      }
+    }
+
+    .section {
+      padding-top: 4vw;
+      padding-bottom: 4vw;
+    }
+
+    .tabs .indicator {
+      background-color: #1a237e;
+    }
+
+    .tabs .tab a:focus,
+    .tabs .tab a:focus.active {
+      background: transparent;
+    }
+
+    .intro {
+      letter-spacing: 1px;
+      font-size: 20px;
+      text-align: center;
+    }
+
+    #parallax {
+      height: 400px;
+    }
+
+
+    #progressbar {
+      background-color: rgb(248, 241, 241);
+      border-radius: 13px;
+      /* (height of inner div) / 2 + padding */
+      padding: 3px;
+    }
+
+    #progressbar>div {
+      background-color: indigo;
+      width: 60%;
+      /* Adjust with JavaScript */
+      height: 20px;
+      border-radius: 10px;
+    }
+
+
+    /* #skills>.row>.col>.card>.card-content {
+      min-height: 150px;
+    } */
+
+    /* #card-prop{
+  height: 50px;
+  border: 1px solid red;
+} */
+    /* @media card-prop and (max-width: 993px){
+      #card-prop{
+       
+      }
+    } */
+    h2{
+      font-size: 450%;
+    }
+    #mypic {
+      height: 400px;
+      /* border-radius: 50px 50px 50px 50px; */
+      border-radius: 50%;
+    }
+
+    .vl {
+      display: inline-block;
+      border-left: 6px solid green;
+      height: 500px;
+    }
+
+    .dev-img {
+      border-radius: 50%;
+      width: 105px;
+      margin-left: 15px;
+    }
+
+    .prog-img {
+      border-radius: 50%;
+      width: 140px;
+      margin-bottom: 43px;
+      margin-left: 60px;
+      margin-top: -38px;
+    }
+
+    .other-img {
+      height: 180px;
+      width: 130px;
+      border-radius: 50%;
+      margin-right: 5px;
+      margin-bottom: 15px;
+    }
+
+    .card_skill:hover {
+      transform: scale(1.05);
+      transition-duration: 0.5s;
+    }
+
+    .card_skill {
+      transition-duration: 1s;
+    }
+
+    /* .training {
+      
+      position: relative;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .training:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background: rgba(0,0,0,0.2);
+    }
+
+    .training-text {
+      color: #FFF;
+      position: relative;
+    } */
+    /* nav{
+      z-index: 100000;
+    } */
+  </style>
+</head>
+
+<body>
+
+  <!-- navbar -->
+  <style>
+    .introduction{
+      text-align: center;
+      color: black;
+      font-family:Georgia, 'Times New Roman', Times, serif;
+      font-weight: bold;
+    }
+
+    @media (max-width: 560px){
+      .introdiv{
+        width: 100%;
+        margin-left: 0%;
+      }
+      .introheading{
+        font-size: 35px;
+      }
+    }
+    @media (max-width: 485px){
+      .introdiv{
+        width: 100%;
+        margin-top: 150px;
+        margin-left: 0%;
+      }
+      .introheading{
+        font-size: 30px;
+      }
+    }
+    @media (max-width: 410px){
+      .introdiv{
+        width: 100%;
+        margin-top: 150px;
+        margin-left: 0%;
+      }
+      .introheading{
+        font-size: 20px;
+      }
+      .introsubheading{
+        font-size: 15px;
+      }
+    }
+  </style>
+  <header>
+    <nav class="nav-wrapper black">
+      <div class="container">
+        <a href="#" class="brand-logo" style="z-index:100;">Sonali</a>
+        <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+          <i class="material-icons">menu</i>
+        </a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#About">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#certi">Trainings</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#othersDiv">More</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="https://www.instagram.com/s.o.n.a.l.i2515/" class="tooltipped btn-floating btn-small indigo darken-4" data-position="bottom"
+              data-tooltip="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a></li>
+          <li><a href="https://www.facebook.com/sonali.singhal.146" class="tooltipped btn-floating btn-small indigo darken-4" data-position="bottom"
+              data-tooltip="Facebook">
+              <i class="fab fa-facebook"></i>
+            </a></li>
+            <li><a href="https://www.linkedin.com/in/sonali-singhal-194b091a9" class="tooltipped btn-floating btn-small indigo darken-4" data-position="bottom"
+              data-tooltip="Linked In">
+              <i class="fab fa-linkedIn"></i>
+            </a></li>
+          <li><a href="https://github.com/sonali2511" class="tooltipped btn-floating btn-small indigo darken-4" data-position="bottom"
+              data-tooltip="GitHub">
+              <i class="fab fa-github"></i>
+            </a></li>
+        </ul>
+        <ul class="sidenav grey lighten-2" id="mobile-menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#About">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#certi">Trainings</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#othersDiv">More</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container left introdiv" style="margin-top: 90px; margin-left: 10%;position: relative; background-color: rgba(255,255,255,0.5);width: 70%;">
+      <h3 class="introduction introheading">
+          Hi, I'm <br>SONALI SINGHAL
+      </h3>
+      <!-- <h3 class="introduction">Hi, I'm</h3>
+      <h3 class="introduction" style="margin-top: -15px;">SONALI SINGHAL</h3> -->
+      <h5 class="introduction introsubheading" style="margin-top: -15px;">Full Stack Developer</h5>
+    </div>
+  </header>
+
+  <!-- photo / grid -->
+  <section class="container section scrollspy" id="About">
+    <div class="row">
+      <h2 class="indigo-text text-darken-4 center">About Me</h2>
+      <div class="col s12 m6 l4">
+        <img src="img/sonali.jpeg" id="mypic" alt="" class="responsive-img materialboxed"
+          style="box-shadow:5px 10px  rgb(166, 172, 172);">
+      </div>
+      <div class="col s12 l8 m6 center" style="border-left: 3px solid black;">
+        <!-- <div class="vl"></div> -->
+        <br>
+        <div class="col s12 l12 offset-l1 ">
+          <h3 class="center">Hello , I'm Sonali Singhal</h3>
+          <h6 class="center intro">A Full Stack Developer currently pursuing Bachelor of Technology in Information
+            Technology.I'm Hardworking , passionate and determined about my work. Always willing to learn and explore
+            different things.
+
+          </h6>
+        </div>
+        <div class="col s12 l12 offset-l1">
+          <!-- tabs -->
+          <ul class="tabs">
+            <li class="tab col s6 l6 m6">
+              <a href="#objective" class="active indigo-text text-darken-4">Objective</a>
+            </li>
+            <li class="tab col s6 l6 m6">
+              <a href="#basicInfo" class="indigo-text text-darken-4">Basic Information</a>
+            </li>
+          </ul>
+          <div id="objective" class="col s12 m12 l12">
+            <p> Seeking a position to utilise my skills and abilities in IT department that offers educational growth
+              while being resourceful, innovative and flexible.</p>
+          </div>
+          <div id="basicInfo" class="col s12 m12 l12">
+            <table class="highlight respnsive-table">
+              <tr>
+                <td class="active indigo-text text-darken-4">Age :</td>
+                <td>21</td>
+              </tr>
+              <tr>
+                <td class="active indigo-text text-darken-4">Address :</td>
+                <td>AC-182B, Shalimar Bagh, Delhi-110088</td>
+              </tr>
+              <tr>
+                <td class="active indigo-text text-darken-4">Contact No :</td>
+                <td>7011146782 / 7838274391</td>
+              </tr>
+              <tr>
+                <td class="active indigo-text text-darken-4">Email ID:</td>
+                <td>sonali.singhal155@gmail.com</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="parallax-container" id="parallax">
+    <div class="parallax">
+      <img src="img/skill.jpg" alt="" class="responsive-img">
+    </div>
+  </div>
+
+  <style>
+    #skills .card_skill {
+      min-height: 520px;
+    }
+
+    #skills .card .card-image img {
+      min-height: 350px;
+    }
+
+    #skills .card .card-content {
+      min-height: 170px;
+    }
+  </style>
+  <section class="container  scrollspy" id="skills">
+    <style>
+       @media (max-width: 400px){
+        .progInner{
+            margin-left: 0px;
+        }
+      }
+    </style>
+    <h2 class="indigo-text text-darken-4 center">Skills</h2>
+    <div class="row">
+      <div class="col s12 m6 l4">
+        <div class="card card_skill" style="border-radius: 35px 35px 35px 35px;">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" id="card-img" src="img/webd.jpg">
+          </div>
+          <div class="card-content " id="card-prop">
+            <span class="card-title activator grey-text text-darken-4">Development Skills<i
+                class="material-icons right">more_vert</i></span>
+            <!-- <p><a href="#">This is a link</a></p> -->
+            <div class="card-action">
+              <a href="https://github.com/sonali2511/CNBC-Clone">View Application</a>
+            </div>
+          </div>
+
+          <div class="card-reveal" style=" background: linear-gradient(90deg, rgba(159, 243, 138, 1) 0%, rgba(244, 249, 160, 1) 100%);">
+            <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
+            <img src="img/html5.jpg" alt="" class="responsive-img dev-img">
+            <img src="img/css3.png" alt="" class="responsive-img dev-img">
+            <img src="img/js.jpg" alt="" class="responsive-img dev-img">
+            <img src="img/bootstrap.png" alt="" class="responsive-img dev-img">
+            <img src="img/angularjs.png" alt="" class="responsive-img dev-img">
+            <img src="img/reactjs.png" alt="" class="responsive-img dev-img">
+            <img src="img/nodejs.webp" alt="" class="responsive-img dev-img">
+            <img src="img/mongodb.png" alt="" class="responsive-img dev-img">
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6 l4">
+        <div class="card card_skill" style="border-radius: 35px 35px 35px 35px;">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" id="card-img" src="img/programming.jpg">
+          </div>
+          <div class="card-content " id="card-prop">
+            <span class="card-title activator grey-text text-darken-4" >Programing Skills<i
+                class="material-icons right">more_vert</i></span>
+            <!-- <p><a href="#">This is a link</a></p> -->
+            <div class="card-action">
+              <a href="https://github.com/sonali2511/CNBC-Clone" >View Application</a>
+            </div>
+          </div>
+
+          <div class="card-reveal progInner" style=" background: linear-gradient(90deg, rgba(159, 243, 138, 1) 0%, rgba(244, 249, 160, 1) 100%);">
+            <span class="card-title white-text text-darken-4"><i class="material-icons right">close</i></span>
+            <br><br>
+            <img src="img/c++.jpg" alt="" class="responsive-img prog-img center">
+            <img src="img/javaProg.png" alt="" class="responsive-img prog-img center">
+            <img src="img/dsAlgo.png" alt="" class="responsive-img prog-img center">
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m12 l4">
+        <div class="card card_skill" style="border-radius: 35px 35px 35px 35px;">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" id="card-img" src="img/others.jpg">
+          </div>
+          <div class="card-content" id="card-prop">
+            <span class="card-title activator grey-text text-darken-4">Other Skills<i
+                class="material-icons right">more_vert</i></span>
+            <!-- <p><a href="#">This is a link</a></p> -->
+            <div class="card-action">
+              <a href="https://github.com/sonali2511/CNBC-Clone">View Application</a>
+            </div>
+          </div>
+
+          <div class="card-reveal" style=" background: linear-gradient(90deg, rgba(159, 243, 138, 1) 0%, rgba(244, 249, 160, 1) 100%);">
+            <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
+            <br><br>
+            <!-- <div class="row">
+              <div class="col l5 offset-l1">
+                <div style="overflow: hidde; background-image: url('./img/puppteer.jpg'); background-size: cover; background-position: center; max-width: 30px; height: auto;">
+              </div>
+              <div class="col l5 offset-l1">
+                <div style="overflow: hidde; background-image: url('./img/selenium.png'); background-size: cover; background-position: center; max-width: 30px; height: auto;">
+              </div>
+              <div class="col l5 offset-l1">
+                <div style="overflow: hidde; background-image: url('./img/machineLearning.jpg'); background-size: cover; background-position: center; max-width: 30px; height: auto;">
+              </div>
+              <div class="col l5 offset-l1">
+                <div style="overflow: hidde; background-image: url('./img/sql.png'); background-size: cover; background-position: center; max-width: 30px; height: auto;">
+              </div>
+            </div> -->
+            <img src="img/puppteer.jpg" alt="puppteer" class=" other-img ">
+            <img src="img/selenium.png" alt="" class=" other-img">
+            <img src="img/machineLearning.jpg" alt="" class=" other-img">
+            <img src="img/sql.png" alt="" class=" other-img center">
+          </div>
+        </div>
+      </div>
+    </div>
+    <br><br>
+  </section>
+
+  <div class="parallax-container" id="parallax">
+    <div class="parallax">
+      <img src="img/training.jpg" alt="" class="responsive-img">
+    </div>
+  </div>
+
+
+  <div id="" style="position: relative; z-index: 2">
+
+    <style>
+      #certi .container {
+        padding-bottom: 30px;
+        min-height: 600px;
+      }
+
+      #certi .col.indigo {
+        font-size: 20px;
+        line-height: 30px;
+        border: 2px solid black;
+        margin-top: 10px;
+        /* vertical-align: middle; */
+      }
+
+      #target .img-cont {
+        /* vertical-align: middle; */
+        padding-top: 30%
+      }
+      .training{
+        border-radius: 20px 20px 20px 20px;
+      }
+      .training:hover{
+        color: burlywood;
+      }
+    </style>
+    <section class="scrollspy" id="certi">
+      <div class="container center">
+        <h2 class="indigo-text text-darken-4 center">Training and Certification </h2>
+        <div class="row" style="margin-bottom: 20px;">
+          <div class="col s12 m4 offset-m1 l4 offset-l1 indigo white-text training" onclick="handler('ui')" >UI</div>
+          <div class="col s12 m4 offset-m2 l4 offset-l2 indigo white-text training" onclick="handler('mean')">MEAN</div>
+          <div class="col s12 m4 offset-m1 l4 offset-l1 indigo white-text training" onclick="handler('levelup')">Level Up</div>
+          <div class="col s12 m4 offset-m2 l4 offset-l2 indigo white-text training" onclick="handler('nucleus')">Nucleus
+          </div>
+        </div>
+        <div id="target" class="hide">
+          <div class="row" style="vertical-align: middle;">
+
+            <div class="col l4 img-div">
+              <div class="img-cont hide-on-med-and-down">
+              </div>
+              <img class="responsive-img materialboxed" src="" alt="">
+            </div>
+            <div class="col l6 offset-l1 text-div">
+              <h4>What I Learnt...</h4>
+              <h5></h5>
+              <h6></h6>
+              <p class="instructor" style="color: teal; font-size: 20px;font-weight: bold;"> Instructor: <span style="color: black; font-size: 18px; font-weight: normal;"></span></p>
+              <p class="desc" style="letter-spacing: 1px; font-family: 'Times New Roman', Times, serif;font-size: 22px;"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="demo" style="position: absolute;height: 100%;width: 100%;top: 0%;z-index: -1;overflow: hidden;"></div>
+    <br>
+  </div>
+  <br>
+  <br>
+  <br>
+  <!-- parallax -->
+  <div class="parallax-container" id="parallax">
+    <div class="parallax">
+      <!-- <h2 class="white-text text-darken-4">
+        Projects
+      </h2> -->
+      <img src="img/project3.jpg" alt="" class="responsive-img">
+    </div>
+  </div>
+
+  <style>
+    #pro .carousel-item {
+      min-width: 800px;
+      height: auto;
+    }
+  </style>
+
+  <style>
+    #projects .card .card-image img {
+      width: 100%;
+      overflow: hidden;
+      height: 350px;
+    }
+
+    #projects .card {
+      border-radius: 35px 25px 35px 25px;
+      /* box-shadow: 5px 10px #a8a7a7; */
+    }
+
+    #projects .card:hover {
+      transform: scale(1.04);
+      transition-duration: 0.8s;
+      transform-style: preserve-3d;
+    }
+
+    #projects .card-reveal {
+      background: linear-gradient(90deg, rgba(159, 243, 138, 1) 0%, rgba(244, 249, 160, 1) 100%);
+
+    }
+  </style>
+  <!-- background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(240,109,197,1) 0%, rgba(0,255,230,1) 100%);background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(162,167,227,1) 0%, rgba(244,230,138,1) 100%); -->
+  <div  style="background: linear-gradient(90deg, rgba(245,244,159,1) 0%, rgba(116,206,230,1) 100%);">
+    <section class="container  scrollspy" id="projects">
+      <h2 class="indigo-text text-darken-4 center">My Projects </h2>
+      <br><br>
+      <div class="row">
+        <div class="col s12 m6 l4">
+          <div class="card ">
+            <div class="card-image waves-effect waves-block waves-light" style="overflow: unset;">
+              <img class="activator " src="img/onlineTest.jpg" >
+              <a href="" class="halfway-fab btn-floating pink pulse">
+                <i class="material-icons">star</i>
+              </a>
+            </div>
+            <div class="card-content ">
+              <div>
+                <span class="card-title activator grey-text text-darken-4">Pareeksha<i
+                    class="material-icons right">more_vert</i></span>
+              </div>
+              <p><a href="https://github.com/sonali2511/Pareeksha-MEAN-ML">View Application</a></p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Pareeksha<i class="material-icons right">close</i></span>
+              <!-- <img src="img/mern1.png" class="proj-innerimg" alt=""> -->
+              <p>Pareeksha is a MEAN & ML based Online Test Application which allows teachers to upload tests , and students can attempt and analyse their results. It is easy to use and handy application.
+               Students can also give feedack regarding the test created by respective teacher. The result of the test is sent to the student via mail immediately after submiting the test.
+                The main objective is to transform Offline System into Online and to make a step towards Digital Education.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6 l4">
+          <div class="card ">
+            <div class="card-image waves-effect waves-block waves-light" style="overflow: unset">
+              <img class="activator" src="img/puppteer.jpg" class="proj-img">
+               <a href="" class="halfway-fab btn-floating pink pulse">
+                <i class="material-icons">star</i>
+              </a>
+            </div>
+            <div class="card-content ">
+              <span class="card-title activator grey-text text-darken-4">Automation<i
+                  class="material-icons right">more_vert</i></span>
+              <p><a href="https://github.com/sonali2511/Gmail-Automation">View Application</a></p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Gmail Automation<i
+                  class="material-icons right">close</i></span>
+              <!-- <img src="img/mern1.png" class="proj-innerimg" alt=""> -->
+              <p>Gmail Automation is a one click application which is made using puppeteer.By running a simple command you can perform any of the below listed task i.e
+                1) You can sent mail automatically using any number of users.
+                2) It scraps all important mails and convert them to PDF.
+                3) It automatically deletes all Spam mails if any.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6 l4">
+          <div class="card ">
+            <div class="card-image waves-effect waves-block waves-light" style="overflow: unset">
+              <img class="activator" src="img/fileSys.gif">
+              <a href="" class="halfway-fab btn-floating pink pulse">
+                <i class="material-icons">star</i>
+              </a>
+            </div>
+            <div class="card-content ">
+              <span class="card-title activator grey-text text-darken-4">File System<i
+                  class="material-icons right">more_vert</i></span>
+              <p><a href="https://github.com/sonali2511/FileSystem">View Application</a></p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">File System<i
+                  class="material-icons right">close</i></span>
+              <p>File System is an interesting application of managing your folders and files in a structural manner. 
+                By executing a simple command on your command prompt you can manage your files as you like.
+                The scripts are wriiten in JavaScript and are easy to understand .
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6 l4">
+          <div class="card ">
+            <div class="card-image waves-effect waves-block waves-light" style="overflow: unset">
+              <img class="activator" src="img/weather.png">
+              <a href="" class="halfway-fab btn-floating pink pulse">
+                <i class="material-icons">star</i>
+              </a>
+            </div>
+            <div class="card-content ">
+              <span class="card-title activator grey-text text-darken-4">Weather App<i
+                  class="material-icons right">more_vert</i></span>
+              <p><a href="https://github.com/sonali2511/Weather-App-CLI">View Application</a></p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Weather App<i
+                  class="material-icons right">close</i></span>
+              <p>Weather App is a weather predictor application which predicts the weather condition of any city in the
+                world. It provides you 7 days information about the changes in the weather.
+                The Scripts are written in JavaScript . The application uses third party Api to determined the weather.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6 l4">
+          <div class="card ">
+            <div class="card-image waves-effect waves-block waves-light" style="overflow: unset">
+              <img class="activator" src="img/cnbc.jpg">
+              <a href="" class="halfway-fab btn-floating pink pulse">
+                <i class="material-icons">star</i>
+              </a>
+            </div>
+            <div class="card-content ">
+              <span class="card-title activator grey-text text-darken-4">CNBC Clone<i
+                  class="material-icons right">more_vert</i></span>
+              <p><a href="https://github.com/sonali2511/CNBC-Clone">View Application</a></p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">CNBC-Clone<i
+                  class="material-icons right">close</i></span>
+              <p>By using the concepts of UI which i learned during my UI training , I made a clone of CNBC. This is a static website which is made through HTML4,CSS2.The aim of buliding it is to enhance my designing skills and to learn more stuff during its making process.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6 l4">
+          <div class="card ">
+            <div class="card-image waves-effect waves-block waves-light" style="overflow: unset">
+              <img class="activator" src="img/excel.jpg">
+              <a href="" class="halfway-fab btn-floating pink pulse">
+                <i class="material-icons">star</i>
+              </a>
+            </div>
+            <div class="card-content ">
+              <span class="card-title activator grey-text text-darken-4">Excel Clone<i
+                  class="material-icons right">more_vert</i></span>
+              <p><a href="#">View Application</a></p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Excel Clone<i
+                  class="material-icons right">close</i></span>
+              <p>MsExcel is a powerful tool to present tables of values arranged in rows and columns that can be manipulated mathematically using both basic and complex arithmetic operations and functions. So, I tried to inherit some of its feature and build its clone using ElectronJS.
+                Just by writing simple scripts in JavaScript , I was able to manage the working of its formula Bar. It was a very nice experience to build something unique. 
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br><br>
+  </div>
+
+  <!-- <div class="parallax-container" id="parallax">
+    <div class="parallax">
+      <img src="img/parallax.jpg" alt="" class="responsive-img">
+    </div>
+  </div> -->
+  <section class="container  scrollspy" id="othersDiv">
+    <h2 class="indigo-text text-darken-4 center">More About Me !</h2>
+    <div class="row">
+      <div class="col s12 m6 l6 ">
+        <br><br>
+            <h4 class="center indigo-text text-darken-4">Other Achievements</h4>
+            <div class="card medium">
+              <div class="card-image">
+                <img src="img/eloquence.jpeg" class="responsive-img materialboxed">
+                <span class="card-title">Eloquence'19</span>
+              </div>
+              <div class="card-content">
+                <p>I worked as a team member in Eloquence'19 which is the literary fest of my college.I,along with other 4 members of the team together created the fest website to register for the fest events.
+                </p>
+              </div>
+              <div class="card-action indigo black-text text-darken-4">
+                <a href="https://github.com/sonali2511/eloquence19">Website Code</a>
+              </div>
+            </div>
+      </div>
+      <style>
+        .carousel{
+          /* margin-top: -100px; */
+        }
+        .carousel .carousel-item{
+          width: 100%;
+          
+        }
+      </style>
+      <div class="col s12 m6 l6">
+        <br><br>
+        <h4 class="indigo-text text-darken-4 center">My Hobbies & Interests</h4>
+        <div class="carousel carousel-slider center" >
+          <div class="carousel-fixed-item center">
+            <!-- <a class="btn waves-effect white grey-text darken-text-2">button</a> -->
+          </div>
+          <div class="carousel-item indigo white-text" href="#one!">
+            <h2>Art & Craft</h2>
+            <img src="img/art1.jpg" alt="" style="background-size: cover;">
+          </div>
+          <div class="carousel-item indigo white-text" href="#two!" >
+            <h2>Music</h2>
+            <img src="img/music.jpg" alt="">
+          </div>
+          <div class="carousel-item indigo white-text" href="#three!">
+            <h2>Nature Loving</h2>
+            <img src="img/nature1.jpg" alt="">
+          </div>
+          <div class="carousel-item indigo white-text" href="#four!" >
+            <h2>Reading</h2>
+            <img src="img/reading.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+   
+    
+  </section>
+
+  <footer class="page-footer black darken-3" id="contact">
+
+    <div class="container">
+      <div class="row">
+        <div class="col l12 m12 s12 center">
+          <h5 class="white-text center">Connect With Me </h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="https://www.facebook.com/sonali.singhal.146">Facebook    </a>  <i class="fab fa-facebook"></i></li>
+            <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/sonali-singhal-194b091a9">Linked In   </a> <i class="fab fa-linkedIn"></i></li>
+            <li><a class="grey-text text-lighten-3" href="https://www.instagram.com/s.o.n.a.l.i2515/">Instagram   </a><i class="fab fa-instagram"></i></li>
+            <li>Email ID: sonali.singhal155@gmail.com</li>
+            <li><a href="https://github.com/sonali2511">My GitHub Profile </a> <i class="fab fa-github"></i></li>
+          </ul>
+         
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright grey darken-4">
+      <div class="container center-align">&copy; 2020 Sonali Singhal</div>
+    </div>
+  </footer>
+
+
+  <script>
+    let dummy = {
+      "ui": {
+        date:"(2nd Jan 2019 - 31st Mar 2019)",
+        instructor:"RaviKant Tyagi",
+        desc: "UI helps to make a website eye catching and responsive.It is a major part of enhancing my development skills , therefore this training helped me alot to learn and create fascinating stuffs like Animations,dynamic pages,responsive websites etc.",
+        img: "./img/uiCertificate.jpeg"
+      },
+      "mean": {
+        date:"(1st June 2019 - 31st July 2019)",
+        instructor:"Amit Srivastava",
+        desc: "A Full Stack development course which helped me to create dynamic websites. It give me an insight of how actually a website works. Also, i created my own api's at the backend and learnt how data is exchanged between client and server side.",
+        img: "./img/meanCertificate.jpeg"
+      },
+      "levelup": {
+        date:"(11th Jan 2020 - 5th May 2020)",
+        instructor:"Rajneesh Kumar",
+        desc: "Level Up is a Data Structure and Algorithm course which helped me to solve complex programming problems with ease. It helped me to brush-up my logics and prepare them for interview problems.",
+        img: "./img/coming-soon.jpg"
+      },
+      "nucleus": {
+        date:"(20th Jan 2018 - 1st May 2018)",
+        instructor:"Pareik Jain",
+        desc: "It is a Fundamental course of JAVA which is the building blocks of learning programming and data structures with algorithms. The course not only strengthen my logics but also helped me to develop interest in computers and programming.",
+        img: "./img/nucleusCertificate.jpg"
+      }
+    }
+    handler('ui')
+
+    function handler(cert) {
+      console.log(cert)
+      let tar = document.querySelector("#certi #target");
+      let h5 = tar.querySelector("h5");
+      let h6=tar.querySelector("h6");
+      let instructor=tar.querySelector(".instructor");
+      let p = tar.querySelector(".desc");
+      let img = tar.querySelector("img");
+      let span=tar.querySelector("span");
+
+      if (!tar.classList.contains("hide") && h5.innerText.toLowerCase() === cert) {
+        tar.classList.add("hide");
+        return;
+      }
+  
+      tar.classList.remove("hide")
+      h5.innerText = cert.toUpperCase();
+      h6.innerText=dummy[cert]["date"]
+      span.innerText=dummy[cert]["instructor"];
+      p.innerText = dummy[cert]["desc"]
+      img.src = dummy[cert]["img"]
+
+    }
+  </script>
+
+
+  <!-- Compiled and minified JavaScript -->
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script src="./plugins/Polygonal-Particles-Background-polygonizr/src/polygonizr.js"></script>
+  <script src="./plugins/Polygonal-Particles-Background-polygonizr/src/polygonizr.min.js"></script>
+  <!-- <script src="./plugins/jquery-flipster-master/src/jquery.flipster.js"></script> -->
+  <script>
+    //   document.addEventListener('DOMContentLoaded', function() {
+    //   var elems = document.querySelectorAll('.slider');
+    //   var instances = M.Slider.init(elems, options);
+    // });
+
+
+    $('.carousel.carousel-slider').carousel({
+      fullWidth: true
+    });
+    $(document).ready(function () {
+
+      $('.sidenav').sidenav();
+      $('.materialboxed').materialbox();
+      $('.parallax').parallax();
+      $('.tabs').tabs();
+      $('.datepicker').datepicker({
+        disableWeekends: true,
+        yearRange: 1
+      });
+      $('.tooltipped').tooltip();
+      $('.scrollspy').scrollSpy();
+      // $('.slider').slider();
+      $('.carousel').carousel(
+        {
+          indicators: true,
+        
+        }
+      )
+      $('#demo').polygonizr({
+
+        // Indicates the time (in seconds) to pause after a node has reached its destination. 
+        restNodeMovements: 1,
+
+        // Indicates how long (in seconds) it will take for a node to move from start to finish. 
+        duration: 2,
+
+        // Indicates the maximum (will be randomized) distance a node can move (in pixles) from its starting position. 
+        nodeMovementDistance: 100,
+
+        // Indicates how many nodes to paint which relation can be filled (note: nodeFillSapce must be set to true). 
+        numberOfNodes: 150,
+
+        // Indicates how many nodes to paint that does not create relations that can be filled. 
+        numberOfUnconnectedNode: 30,
+
+        // Indicates if a line should be drawn between the drawn between unconnected nodes. 
+        ConnectUnconnectedNodes: true,
+
+        // Indicates the maximum distance between unconnected nodes to draw the line.
+        ConnectUnconnectedNodesDistance: 250,
+
+        // Indicates the maximum painted size of each node's "dot".
+        nodeDotSize: 2.5,
+
+        // Indicates the ease mode of each node movement (linear, easeIn, easeOut, easeInOut, accelerateDecelerate). 
+        nodeEase: "easeOut",
+
+        // If true, the nodes starting position will descend into place on load. 
+        nodeFancyEntrance: false,
+
+        // If true, each nodes starting position will be randomized within the canvas size. If false, each nodes position must be specified manually. 
+        randomizePolygonMeshNetworkFormation: true,
+
+        // Indicates the positioning of each nodes starting position (note: randomizePolygonMeshNetworkFormation must be set to false).
+        specifyPolygonMeshNetworkFormation: null,
+
+        // Indicates how many nodes of the "numberOfNodes" that will be connected.
+        nodeRelations: 3,
+
+        // Indicates the frame rate at which to up<a href="https://www.jqueryscript.net/time-clock/">date</a> each node movement.
+        animationFps: 30,
+
+        // Indicates the color (RGB) of each node's "dot". 
+        nodeDotColor: "0, 128, 128",
+
+        // Indicates the color (RGB) of the line drawn between connected nodes.
+        nodeLineColor: "112, 214, 214",
+
+        // Indicates the fill color (RGB) between each connected node. 
+        nodeFillColor: "208, 245, 245",
+
+        // Indicates the linear gradient to the fill color (RGB) between each connected node. 
+        nodeFillGradientColor: null,
+
+        // Indicates the fill color's alpha level (1-0).
+        nodeFillAlpha: 0.5,
+
+        // Indicates the alpha level (1-0) of the line drawn between connected nodes. 
+        nodeLineAlpha: 0.5,
+
+        // Indicates the alpha level (1-0) of each node's "dot". 
+        nodeDotAlpha: 1.0,
+
+        // Indicates the probability (1-0) of showing the coordinates for each nodes final position.
+        nodeDotPrediction: 0,
+
+        // If true, the relation between connected nodes will be filled. 
+        nodeFillSapce: true,
+
+        // If true, each node's final position can be outside the canvas boundary. 
+        nodeOverflow: true,
+
+        // If true, a glowing effect is added to each node, its relations and fill respectively.
+        nodeGlowing: false,
+
+        // Indicates the width of the canvas on which to paint each node. 
+        canvasWidth: $(this).width(),
+
+        // Indicates the height of the canvas on which to paint each node.
+        canvasHeight: $(this).height(),
+
+        // Indicate the CSS position property by which to position the canvas.
+        canvasPosition: "absolute",
+
+        // Indicate the CSS top property by which to vertically position the canvas.
+        canvasTop: "auto",
+
+        // Indicate the CSS bottom property by which to vertically position the canvas.
+        canvasBottom: "auto",
+
+        // Indicate the CSS right property by which to horizontally position the canvas.
+        canvasRight: "auto",
+
+        // Indicate the CSS left property by which to horizontally position the canvas.
+        canvasLeft: "auto",
+
+        // Indicate the CSS z-index property by which to specify the stack order of the canvas.
+        canvasZ: "auto"
+
+      });
+    });
+  </script>
+</body>
+
+</html>
